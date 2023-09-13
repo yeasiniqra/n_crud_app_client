@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import Update from './updateUser/Update'
+
 import { useState } from 'react'
+import UpdateUser from '@/pages/UpdateUser/UpdateUser'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -34,7 +35,7 @@ export default function Home({data}) {
                   <th>Name</th>
                   <th>Designation</th>
                   <th>Salary</th>
-                  <th>Action</th>
+                  <th className='text-center'>Action</th>
                 </tr>
               </thead>
               <tbody>
@@ -59,8 +60,9 @@ export default function Home({data}) {
               </tbody>
             </table>
           </div>
+          <UpdateUser userdata={userdata} />
       </div>
-      <Update userdata={userdata} />
+     
    </>
   )
 }

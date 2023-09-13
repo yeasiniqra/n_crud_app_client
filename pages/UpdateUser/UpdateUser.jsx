@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Update = ({userdata}) => {
+const UpdateUser = ({userdata}) => {
     const handleUpdate = (e) => {
         e.preventDefault()
         const name = e.target.name.value;
@@ -71,4 +71,4 @@ const Update = ({userdata}) => {
     );
 };
 
-export default Update;
+export default UpdateUser;
