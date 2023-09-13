@@ -2,7 +2,8 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 
 import { useState } from 'react'
-import UpdateUser from '@/pages/UpdateUser/UpdateUser'
+import UpdateUser from './updateUser'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -49,7 +50,7 @@ export default function Home({data}) {
                           <td>{user.salary}</td>
                           <td>
                              <button onClick={() => handleDelete(user._id)} className="btn btn-warning mr-2">Delete</button>
-                              <label htmlFor="my-modal" onClick={() => setUserdata(user)} class="btn btn-success">
+                              <label htmlFor="myModal" onClick={() => setUserdata(user)} class="btn btn-success">
                                   Update
                               </label>
                           </td>

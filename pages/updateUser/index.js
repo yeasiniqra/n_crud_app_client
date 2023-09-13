@@ -30,11 +30,11 @@ const UpdateUser = ({userdata}) => {
     }
     return (
         <div>
-            <input type="checkbox" id="my-modal" class="modal-toggle" />
+            <input type="checkbox" id="myModal" class="modal-toggle" />
             <div class="modal">
                 <div class="modal-box ex">
                     <div class="modal-action mt-0">
-                        <label for="my-modal" class="btn h-5 min-h-fit bg-black text-cyan-50">X</label>
+                        <label htmlFor="myModal" class="btn h-5 min-h-fit bg-black text-cyan-50">X</label>
                     </div>
                     <div className="hero bg-base-200">
                         <div className="hero-content gap-0 p-0 w-[100%] flex-col lg:flex-row-reverse">
