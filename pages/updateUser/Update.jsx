@@ -32,7 +32,7 @@ const Update = ({userdata}) => {
         <div>
             <input type="checkbox" id="my-modal" class="modal-toggle" />
             <div class="modal">
-                <div class="modal-box">
+                <div class="modal-box ex">
                     <div class="modal-action mt-0">
                         <label for="my-modal" class="btn h-5 min-h-fit bg-black text-cyan-50">X</label>
                     </div>
