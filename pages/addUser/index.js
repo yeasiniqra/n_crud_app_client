@@ -4,18 +4,18 @@ const index = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
        
-        const name = e.target.name.value;
+        const myname = e.target.myname.value;
         const designation = e.target.designation.value;
         const salary = e.target.salary.value;
 
          // Perform validation
-        if (!name || !designation || !salary) {
+        if (!myname || !designation || !salary) {
             alert("Please fill in all fields.");
             return;
         }
 
        const userData = {
-         name : name,
+         myname : myname,
          designation : designation,
          salary : salary,
        }
@@ -45,7 +45,7 @@ const index = () => {
                                 <label className="label">
                                     <span className="label-text">Name</span>
                                 </label>
-                                <input type="text" name='name' placeholder="Name" className="input input-bordered" />
+                                <input type="text" name='myname' placeholder="Name" className="input input-bordered" />
                             </div>
                             <div className="form-control">
                                 <label className="label">

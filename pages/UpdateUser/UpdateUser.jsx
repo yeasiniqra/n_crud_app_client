@@ -3,12 +3,12 @@ import React from 'react';
 const UpdateUser = ({userdata}) => {
     const handleUpdate = (e) => {
         e.preventDefault()
-        const name = e.target.name.value;
+        const myname = e.target.myname.value;
         const designation = e.target.designation.value;
         const salary = e.target.salary.value;
 
        const userData = {
-         name : name,
+         myname : myname,
          designation : designation,
          salary : salary,
        }
@@ -44,7 +44,7 @@ const UpdateUser = ({userdata}) => {
                                         <label className="label">
                                             <span className="label-text">Name</span>
                                         </label>
-                                        <input type="text" name="name" defaultValue={userdata.name} placeholder="Name" className="input input-bordered" />
+                                        <input type="text" name="myname" defaultValue={userdata.myname} placeholder="Name" className="input input-bordered" />
                                     </div>
                                     <div className="form-control">
                                         <label className="label">

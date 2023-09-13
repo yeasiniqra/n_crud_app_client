@@ -44,7 +44,7 @@ export default function Home({data}) {
                     <>
                       <tr>
                           <th>{user._id}</th>
-                          <td>{user.name}</td>
+                          <td>{user.myname}</td>
                           <td>{user.designation}</td>
                           <td>{user.salary}</td>
                           <td>
